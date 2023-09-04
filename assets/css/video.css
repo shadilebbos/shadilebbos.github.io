@@ -1,0 +1,45 @@
+
+.video-container{
+    z-index: 99999;
+    background-color: rgba(255, 122 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    width:500px;
+    height:500px;
+    margin:0 auto;
+    position:;
+    left:50%;
+    top:50%;
+    margin-left:-250px;
+    margin-top:-250px;
+    transition: all 0.3s;
+}
+
+
+.video-container .close{
+    position: absolute;
+    top:10px; right:25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.video-container video{
+    width: 90%;
+    max-width: 800px;
+    max-height:600px;
+    transform: scale(0);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+    outline: none;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.video-container .show{
+    pointer-events: none;
+    opacity: 1;
+}
+
+.video-container.show video{ transform: scale(1);}
